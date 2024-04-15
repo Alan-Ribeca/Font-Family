@@ -1,0 +1,108 @@
+.footer {
+  margin: 3rem 0 2rem 0;
+  height: 130px;
+
+  .hrFooter {
+    border: 0.5px solid rgba(192, 176, 176, 0.116);
+  }
+
+  .infoPersonal {
+    margin-top: 2.5rem;
+    text-align: center;
+  }
+
+  .social-links,
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social-btn {
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    font-family: "Titillium Web", sans-serif;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    background: white;
+    margin: 5px;
+    transition: 0.3s;
+    justify-content: center;
+  }
+
+  .social-btn svg {
+    height: 24px;
+    width: 24px;
+  }
+
+  .social-btn span {
+    width: 0px;
+    overflow: hidden;
+    transition: 0.3s;
+    text-align: center;
+    margin-left: 5px;
+  }
+
+  .social-btn:hover {
+    width: 150px;
+    border-radius: 5px;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+  }
+
+  .social-btn:hover span {
+    padding: 2px;
+    width: 80px;
+  }
+
+  .social-btn .enlace {
+    display: none;
+    transition: opacity 0.3s;
+  }
+
+  .social-btn:hover .enlace {
+    display: block;
+    width: 100%;
+    margin-left: 0.5rem;
+  }
+
+  .ancla {
+    color: #000000;
+    width: 100%;
+    text-decoration: none;
+    position: relative;
+    margin: 1rem;
+
+    .enlace {
+      position: absolute;
+      top: 10%;
+      left: 5%;
+    }
+
+    .link {
+      position: absolute;
+      top: 17%;
+      left: 2%;
+    }
+  }
+
+  #linkedin svg {
+    fill: #0e76a8;
+    margin: 0 0 0.2rem 0.1rem;
+  }
+
+  #github {
+    fill: #333;
+  }
+}
+
+@media screen and (max-width: 1536px) {
+  .footer {
+    margin: 3rem 0 1rem 0;
+    
+    .infoPersonal {
+      margin-top: 1.5rem;
+    }
+  } 
+}

@@ -1,0 +1,12 @@
+html, .body {
+  width: 88%;
+  margin: 0 auto;
+  color: white;
+  background-color: rgb(3, 3, 3);  
+  font-family: "ABeeZee", sans-serif;
+
+  @media screen and (max-width: 1536px) {
+    margin: 0;
+    width: 100%;
+  }
+}

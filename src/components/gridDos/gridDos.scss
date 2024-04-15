@@ -1,0 +1,176 @@
+.containerGridTable {
+  position: relative;
+  border-radius: 10px;
+  box-shadow: -1px -1px 9px -3px rgba(208, 208, 216, 0.808);
+  width: 100%;
+
+  .brCalendarioTop {
+    position: absolute;
+    top: 8%;
+    left: 5%;
+    width: 90%;
+    border: none;
+    border-top: 1px solid rgba(208, 208, 216, 0.466);
+  }
+
+  .brCalendarioButtom {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    width: 90%;
+    border: none;
+    border-top: 1px solid rgba(208, 208, 216, 0.466);
+  }
+
+  .calendario {
+    position: absolute;
+    font-size: 1.6rem;
+    margin: 0;
+    top: 3%;
+    left: 7%;
+  }
+
+  .mes {
+    font-size: 1.6rem;
+    position: absolute;
+    margin: 0;
+    top: 3.2%;
+    left: 76%;
+  }
+
+  .gridDos {
+    padding: 4rem 1rem 4rem 1rem;
+    width: 100%;
+    height: 100%;
+
+    .th {
+      text-align: center;
+      font-size: 1.2rem;
+      vertical-align: top;
+      height: 30px;
+      padding: 0;
+    }
+  }
+  .btnCalendario {
+    background-color: rgba(208, 208, 216, 0.808);
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 4%;
+    right: 4%;
+    height: 2rem;
+    width: 7.5rem;
+    color: rgb(0, 0, 0);
+
+    &:hover {
+      cursor: pointer;
+      background-color: rgba(255, 255, 255, 0.808);
+      transition: all 0.3s;
+      box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b99f;
+    }
+  }
+}
+
+@media screen and (max-width: 1536px) {
+  .containerGridTable {
+    .brCalendarioTop {
+      left: 14%;
+      width: 70%;
+    }
+
+    .calendario {
+      left: 16%;
+    }
+
+    .mes {
+      left: 72%;
+    }
+
+    .gridDos {
+      width: 88%;
+      padding-left: 13%;
+    }
+
+    .brCalendarioButtom {
+      left: 14%;
+      width: 70%;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .containerGridTable {
+    .brCalendarioTop {
+      left: 5%;
+      width: 90%;
+    }
+    
+    .calendario {
+      left: 8%;
+    }
+
+    .mes {
+      left: 81%;
+    }
+    .gridDos { 
+      width: 100%;
+      padding-left: 4%;
+    }
+
+    .brCalendarioButtom {
+      left: 5%;
+      width: 90%;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .containerGridTable {
+    width: 53.2%;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .containerGridTable {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .containerGridTable {
+    width: 70%;
+
+    .brCalendarioTop {
+      left: 9%;
+      width: 81%;
+    }
+
+    .calendario {
+      left: 11%;
+    }
+
+    .mes {
+      left: 76%;
+    }
+
+    .gridDos {
+      width: 94%;
+      padding-left: 9%;
+    }
+
+    .brCalendarioButtom {
+      left: 9%;
+      width: 81%;
+    }
+
+    .btnCalendario {
+      right: 9%;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) { 
+  .containerGridTable {
+    width: 100%;
+  }
+}

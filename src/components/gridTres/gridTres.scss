@@ -1,0 +1,92 @@
+.gridTres {
+  font-size: 1.4rem;
+  border-radius: 10px;
+  box-shadow: -1px -1px 9px -3px rgba(208, 208, 216, 0.808);
+  padding: 1rem 1rem 2rem 1rem;
+  margin: 0;
+
+  .titleGridTres {
+    font-size: 2rem;
+    margin: -0.2rem 0 0 0;
+    text-align: center;
+  }
+
+  .titulos {
+    margin: 0;
+    padding-top: 0.7rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .uno {
+    font-size: 1.8em;
+  }
+
+  .dos {
+    font-size: 1.5em;
+  }
+
+  .tres {
+    font-size: 1.2em;
+  }
+
+  .cuatro {
+    font-size: 1em;
+  }
+
+  .cinco {
+    font-size: 0.8em;
+  }
+
+  .seis {
+    font-size: 0.6em;
+  }
+
+  .strong {
+    padding-left: 2.5rem;
+  }
+
+  .flecha {
+    padding-left: 2rem;
+  }
+}
+
+@media screen and (max-width: 1536px) {
+  .gridTres {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+
+    .titleGridTres {
+      margin-top: 0.5rem;
+    }
+
+    .titulos {
+      margin-left: 1.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .gridTres {
+    width: 53.2%;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .gridTres {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .gridTres {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .gridTres .titulos {
+    margin-left: 0.5rem;
+  }
+}

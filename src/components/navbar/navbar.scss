@@ -1,0 +1,44 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    margin: 0.3rem 0 0.3rem 0;
+    height: 70px;
+  }
+
+  .ulNav {
+    width: 200px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .liNav {
+    list-style: none;
+    color: rgba(208, 208, 216, 0.808);
+
+    &:hover {
+      cursor: pointer;
+      color: rgb(255, 255, 255);
+    }
+  }
+
+  @media screen and (max-width: 1536px) {
+    margin: 0 1.5rem;
+  }
+
+  @media screen and (max-width: 500px) {
+    margin: 0;
+  }
+}
+
+.hrNav {
+  width: 99%;
+  position: absolute;
+  left: 0;
+  margin: 0;
+  border: 0.5px solid rgba(192, 176, 176, 0.116);
+}

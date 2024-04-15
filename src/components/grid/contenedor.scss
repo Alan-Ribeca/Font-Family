@@ -1,0 +1,106 @@
+.containerGeneral {
+  margin-top: 6rem;
+  font-size: 3rem;
+}
+
+.titulo {
+  width: 28rem;
+  margin: 0 auto;
+
+  .h1Principal {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .instrucciones {
+    margin: 0rem 0 2rem 0;
+    font-size: 1rem;
+    width: 16rem;
+    text-align: center;
+    color: rgba(208, 208, 216, 0.808);
+
+    .detalles {
+      color: #7b52b9f8;
+    }
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 96.3%;
+  margin: 0 auto;
+  color: rgba(208, 208, 216, 0.918);
+
+  font-size: 1em;
+  line-height: 1;
+  letter-spacing: 0.1px;
+  word-spacing: 0.1px;
+  text-transform: none;
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(170px, auto);
+    gap: 2.5rem;
+  }
+}
+
+.titulo {
+  .h1Principal {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.input .instrucciones {
+  font-size: 0.8rem;
+  width: 13rem;
+}
+
+@media screen and (max-width: 1536px) {
+  .containerGeneral {
+    margin-top: 5rem;
+  }
+
+  .container .grid {
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    width: 80%;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 1225px) {
+  .container {
+    width: 100%;
+
+    .grid {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .container .grid {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 550px) { 
+  .containerGeneral {
+    .titulo {
+      width: 98%;
+      .h1Principal {
+        font-size: 3rem;
+      }
+    }
+  }
+}

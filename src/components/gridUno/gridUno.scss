@@ -1,0 +1,172 @@
+@keyframes rotateX {
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+@keyframes girar {
+  0% {
+    transform: rotate(0deg); // La línea comienza en la posición inicial
+  }
+  100% {
+    transform: rotate(360deg); // La línea completa un giro completo
+  }
+}
+
+.gridUno {
+  position: relative;
+  padding: 0.1rem 0 0 2rem;
+  border-radius: 10px;
+  box-shadow: -1px -1px 9px -3px rgba(208, 208, 216, 0.808);
+  overflow: hidden;
+  grid-column: 1 / -1;
+
+  .h2GridUno {
+    font-size: 2.5rem;
+    margin: 1.5rem 0 0 2rem;
+  }
+
+  .pGridUno {
+    font-size: 1rem;
+    width: 60%;
+    text-wrap: balance;
+    margin: 1.5rem 0 1.2rem 2rem;
+  }
+}
+
+.rotacion {
+  position: absolute;
+  bottom: -29%;
+  left: 80%;
+  font-size: 100px;
+  font-weight: bold;
+  color: #ffffff;
+  animation: rotateX 4s linear infinite;
+  transform-style: preserve-3d;
+  text-shadow: 10px 1px 7px rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (max-width: 1536px) {
+  .gridUno {
+    width: 100%;
+    height: 187px;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+
+    .pGridUno {
+      max-width: 66%;
+      padding-top: 0.1rem;
+      overflow: scroll;
+      height: 60px;
+      line-height: 1.2;
+      border-radius: 4px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 20%;
+      left: 0;
+      width: 100%;
+      height: 45px;
+      background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0),
+        rgba(3, 3, 3, 0.781)
+      );
+      pointer-events: none;
+      z-index: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 1176px) {
+  .gridUno .pGridUno {
+    width: 72%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .gridUno {
+    width: 96%;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .gridUno {
+    width: 100%;
+
+    .h2GridUno {
+      margin: 1.5rem 0 0 0.5rem;
+    }
+
+    .pGridUno {
+      margin: 1.5rem 0 0 0.5rem;
+    }
+
+    .rotacion {
+      bottom: 8%;
+      font-size: 60px;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .gridUno {
+    .h2GridUno {
+      text-align: center;
+    }
+
+    .pGridUno {
+      padding-left: 1rem;
+    }
+
+    .rotacion {
+      bottom: -2%;
+      font-size: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .gridUno .pGridUno {
+    width: 100%;
+    text-align: center;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .rotacion {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 691px) {
+  .gridUno {
+    .h2GridUno {
+      margin: 1rem 0;
+    }
+    .pGridUno {
+      width: 99%;
+      max-width: 99%;
+      margin: 1.5rem 0 0 0;
+    }
+    &::after {
+      bottom: 25%;
+    }
+  }
+}
+
+@media screen and (max-width: 504px) { 
+  .gridUno {
+    height: 220px;
+
+    &::after {
+      bottom: 17%;
+    }
+
+    .pGridUno {
+      font-size: 0.8rem;
+    }
+  }
+}
