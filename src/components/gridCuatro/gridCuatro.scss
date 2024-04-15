@@ -78,6 +78,24 @@
         box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
       }
     }
+
+    
+  }
+  .aleatorio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    padding: 0px 17px;
+    bottom: 4%;
+    right: 8%;
+    border-radius: 25px;
+    border: 1px solid rgba(184, 184, 184, 0.219); 
+    height: 2.7rem;
+    width: 84%;
+    transition: all 0.3s; 
+    background-image: linear-gradient(to bottom, #1d1b1b, rgb(15, 13, 13));
+    color: white;
   }
 }
 

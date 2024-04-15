@@ -1,6 +1,7 @@
 import { counterContext } from "../../context/counterContext";
 import { useContext } from "react";
 import "./gridCuatro.scss";
+import { BtnMovil } from "./BtnMovil";
 
 export const GridCuatro = () => {
   const {
@@ -45,7 +46,9 @@ export const GridCuatro = () => {
           <button className="btnSiguiente" onClick={handleClickSiguiente}>
             Siguiente
           </button>
+
         </div>
+          <BtnMovil />
       </div>
     </>
   );

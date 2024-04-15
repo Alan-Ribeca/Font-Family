@@ -16,6 +16,14 @@
     padding-top: 0.7rem;
     display: flex;
     align-items: center;
+
+    .texto {
+      display: inline-block;
+      max-width: 280px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
   }
 
   .uno {
