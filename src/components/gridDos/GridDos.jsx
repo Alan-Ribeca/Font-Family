@@ -15,7 +15,7 @@ export const GridDos = () => {
               <th className="th">Mi</th>
               <th className="th">Ju</th>
               <th className="th">Vi</th>
-              <th className="th">Sá</th>
+              <th className="th">Sa</th>
               <th className="th">Do</th>
             </tr>
           </thead>
