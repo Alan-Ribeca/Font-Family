@@ -9,7 +9,7 @@ export const Header = () => {
         <img src={img} alt="logo" className="logo"/>
         <ul className="ulNav">
           <li className="liNav">Combinar</li>
-          <li className="liNav">Navagar</li>
+          <li className="liNav">Favorito</li>
         </ul>
       </nav>
       <hr  className="hrNav"/>
