@@ -82,16 +82,27 @@
   .aleatorio {
     display: none;
     position: fixed;
-    padding: 0px 17px;
+    padding: 0px 10px;
     bottom: 4%;
     right: 8%;
     border-radius: 25px;
     border: 1px solid rgba(184, 184, 184, 0.219);
-    height: 2.7rem;
+    height: 2.8rem;
     width: 84%;
     transition: all 0.3s;
     background-image: linear-gradient(to bottom, #1d1b1b, rgb(15, 13, 13));
     color: white;
+
+    .textoAleatorio {
+      border: 1px solid rgba(184, 184, 184, 0.219);
+      border-radius: 25px;
+      width: 100px;
+      padding: 6px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
   }
 }
 

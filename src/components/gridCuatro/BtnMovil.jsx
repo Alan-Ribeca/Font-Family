@@ -11,7 +11,7 @@ export const BtnMovil = () => {
         <span className="nombreDeLaFuente">
           {selectedFont ? selectedFont : "ABeeZee"}
         </span>{" "}
-        Aleatorio
+        <span className="textoAleatorio">Aleatorio</span>
       </button>
     </>
   );
