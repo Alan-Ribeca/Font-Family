@@ -23,6 +23,7 @@ export const GridCuatro = () => {
         <p className="nombreFuente">
           Numero de la fuente: {indexActual ? indexActual : 0}
         </p>
+        <p className="save">Guardar</p>
         <p className="nombreFuente-usar">
           <a
             href={
@@ -46,9 +47,8 @@ export const GridCuatro = () => {
           <button className="btnSiguiente" onClick={handleClickSiguiente}>
             Siguiente
           </button>
-
         </div>
-          <BtnMovil />
+        <BtnMovil />
       </div>
     </>
   );
