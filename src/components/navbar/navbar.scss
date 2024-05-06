@@ -14,15 +14,19 @@
     padding: 0;
     display: flex;
     justify-content: space-around;
-  }
 
-  .liNav {
-    list-style: none;
-    color: rgba(208, 208, 216, 0.808);
+    .liNav {
+      list-style: none;
 
-    &:hover {
-      cursor: pointer;
-      color: rgb(255, 255, 255);
+      a {
+        text-decoration: none;
+        color: rgba(208, 208, 216, 0.808);
+
+        &:hover {
+          cursor: pointer;
+          color: white;
+        }
+      }
     }
   }
 
