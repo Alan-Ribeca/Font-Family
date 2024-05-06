@@ -16,7 +16,6 @@
   position: relative;
   padding: 0.1rem 0 0 2rem;
   border-radius: 10px;
-  box-shadow: -1px -1px 9px -3px rgba(208, 208, 216, 0.808);
   overflow: hidden;
   grid-column: 1 / -1;
 
@@ -30,6 +29,12 @@
     width: 60%;
     text-wrap: balance;
     margin: 1.5rem 0 1.2rem 2rem;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none; 
+    }
+  
   }
 }
 
@@ -52,14 +57,21 @@
     overflow: hidden;
     position: relative;
     padding: 0;
-
+    
     .pGridUno {
       max-width: 66%;
       padding-top: 0.1rem;
-      overflow: scroll;
       height: 60px;
       line-height: 1.2;
       border-radius: 4px;
+      background-image: linear-gradient(
+        to bottom,
+        rgba(123, 82, 185, 0.9725490196),
+        rgb(255, 255, 255)
+        );
+        -webkit-background-clip: text; /* Clip degradado a las letras */
+        background-clip: text;
+        -webkit-text-fill-color: transparent; /* Oculta el color del texto */
     }
 
     &::after {
@@ -67,17 +79,13 @@
       position: absolute;
       bottom: 20%;
       left: 0;
-      width: 100%;
+      width: 66%;
       height: 45px;
-      background-image: linear-gradient(
-        to bottom,
-        rgba(255, 255, 255, 0),
-        rgba(3, 3, 3, 0.781)
-      );
       pointer-events: none;
       z-index: 1;
     }
-  }
+
+}
 }
 
 @media screen and (max-width: 1176px) {

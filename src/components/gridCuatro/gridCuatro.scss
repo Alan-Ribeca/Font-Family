@@ -1,6 +1,6 @@
 .containerGridCuatro {
   border-radius: 10px;
-  box-shadow: -1px -1px 9px -3px rgba(208, 208, 216, 0.808);
+  box-shadow: 0px 5px 14px -9px rgba(123, 82, 185, 0.9725490196);
   padding: 1rem 1rem 2rem 1rem;
   margin: 0;
 
@@ -32,7 +32,7 @@
     text-decoration: none;
 
     &:hover {
-      color: white;
+      color: rgba(123, 82, 185, 0.9725490196);
     }
   }
 
@@ -90,7 +90,7 @@
     height: 2.8rem;
     width: 84%;
     transition: all 0.3s;
-    background-image: linear-gradient(to bottom, #1d1b1b, rgb(15, 13, 13));
+    background-image: linear-gradient(to bottom, #000b11, #0f0a18);
     color: white;
 
     .textoAleatorio {
