@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import "./contenedor.scss";
 import { useContext, useEffect } from "react";
 import { counterContext } from "../../context/counterContext";
@@ -8,7 +7,7 @@ import { GridTres } from "../gridTres/GridTres";
 import { GridCuatro } from "../gridCuatro/GridCuatro";
 
 export const Container = () => {
-  const { selectedFont, handleClick, fontsData } = useContext(counterContext);
+  const { selectedFont, handleClick } = useContext(counterContext);
 
   useEffect(() => {
     const handleKeyDown = (event) => {

@@ -1,7 +1,21 @@
-import "./favorito.scss"
+import "./favorito.scss";
 
 export const Favorito = () => {
+  const datosTraidos = JSON.parse(localStorage.getItem("datosFavoritos"));
+
   return (
-    <h1>En favorito</h1>
-  )
-}
+    <>
+      <section>
+        <h1>Mis Favoritos</h1>
+
+        <div className="ContainerFavoritos">
+          {datosTraidos.map((nombre, index) => (
+            <div key={index} className="favoritos">
+              <p>El nombre es {nombre}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+    </>
+  );
+};

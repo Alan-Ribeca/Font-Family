@@ -11,6 +11,19 @@ export const GridCuatro = () => {
     indexActual,
   } = useContext(counterContext);
 
+  const handleSave = (selectedFont) => {
+    console.log(`se guardo bien la fuente con el nombre: ${selectedFont}`);
+
+    //primero obtengo los datos del localStorage
+    const storedData = JSON.parse(localStorage.getItem("datosFavoritos")) || [];
+    
+    //agrego el nuevo valor
+    const newData = [...storedData, selectedFont];
+    
+    //agrego los datos actualizados al localStorage
+    localStorage.setItem("datosFavoritos", JSON.stringify(newData));
+  };
+
   return (
     <>
       <div className="containerGridCuatro">
@@ -23,7 +36,9 @@ export const GridCuatro = () => {
         <p className="nombreFuente">
           Numero de la fuente: {indexActual ? indexActual : 0}
         </p>
-        <p className="save">Guardar</p>
+        <button className="save" onClick={() => handleSave(selectedFont)}>
+          Guardar
+        </button>
         <p className="nombreFuente-usar">
           <a
             href={
