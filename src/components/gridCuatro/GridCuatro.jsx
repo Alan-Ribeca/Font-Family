@@ -11,17 +11,32 @@ export const GridCuatro = () => {
     indexActual,
   } = useContext(counterContext);
 
-  const handleSave = (selectedFont) => {
-    console.log(`se guardo bien la fuente con el nombre: ${selectedFont}`);
+  const handleSave = () => {
+    if (!selectedFont) {
+      console.log("No hay fuente seleccionada para guardar.");
+      return;
+    }
 
-    //primero obtengo los datos del localStorage
+    console.log(
+      `Se guardó correctamente la fuente con el nombre: ${selectedFont}`
+    );
+
+    // Primero obtengo los datos del localStorage
     const storedData = JSON.parse(localStorage.getItem("datosFavoritos")) || [];
-    
-    //agrego el nuevo valor
+
+    // Agrego el nuevo valor
     const newData = [...storedData, selectedFont];
-    
-    //agrego los datos actualizados al localStorage
+
+    // Agrego los datos actualizados al localStorage
     localStorage.setItem("datosFavoritos", JSON.stringify(newData));
+  };
+
+  //evitamos que se guarde en favorito si queda marcado el boton y se preciona la barra espaciadora
+  const handleKeyDown = (e) => {
+    if (e.keyCode === 32) {
+      e.preventDefault();
+      return;
+    }
   };
 
   return (
@@ -36,7 +51,7 @@ export const GridCuatro = () => {
         <p className="nombreFuente">
           Numero de la fuente: {indexActual ? indexActual : 0}
         </p>
-        <button className="save" onClick={() => handleSave(selectedFont)}>
+        <button className="save" onClick={handleSave} onKeyDown={handleKeyDown}>
           Guardar
         </button>
         <p className="nombreFuente-usar">

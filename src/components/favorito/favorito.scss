@@ -1,44 +1,54 @@
 .misFavoritos {
   height: 100vh;
 
-.title {
+  .title {
     margin: 4rem 0;
     text-align: center;
-}
+  }
 
   .containerFavoritos {
     .cuadradoFav {
-        width: 22%;
-        margin-bottom: 5rem;
-        position: relative;
-        
+      width: 22%;
+      margin-bottom: 5rem;
+      position: relative;
+
+      .borrar {
+        position: absolute;
+        top: 2%;
+        right: 3%;
+        border: none;
+        background-color: transparent;
+
         .estrella {
-          position: absolute;
-            top: 2%;
-            right: 3%;
-        }
-
-
-        .name {
-            margin-top: 1rem;
-        }
-
-        .btn {
-          padding: 0.5rem 1rem;
-          border: 1px solid transparent;
-          background-color: rgb(123, 2, 153);
           color: #fff;
-          border-radius: 0.25rem;
-          margin-right: 0.7rem;
-          transform: skew(-21deg);
-          width: 7rem;
-          transition: all 0.3s ease-in-out;
-    
+
           &:hover {
-            background-color: #7b52b9;
             cursor: pointer;
+            color: #7b52b9;
           }
         }
+      }
+
+      .name {
+        margin-top: 1rem;
+      }
+
+      .btn {
+        padding: 0.5rem 1rem;
+        border: 1px solid transparent;
+        background-color: rgb(123, 2, 153);
+        color: #fff;
+        border-radius: 0.25rem;
+        margin-right: 0.7rem;
+        transform: skew(-21deg);
+        width: 7rem;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          background-color: #7b52b9;
+          cursor: pointer;
+        }
+      }
     }
   }
 }
