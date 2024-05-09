@@ -52,3 +52,18 @@
     }
   }
 }
+
+.sinFavoritos {
+  height: 100vh;  
+  text-align: center;
+
+  .title {
+    margin-top: 3rem;
+  }
+
+  .enlace {
+    text-decoration: none;
+    cursor: pointer;
+    color: #7b52b9;
+  }
+}

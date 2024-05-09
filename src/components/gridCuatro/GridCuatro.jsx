@@ -19,21 +19,34 @@ export const GridCuatro = () => {
       gravity: "top",
       position: "right",
       style: {
-        background: "Rgb(123, 82, 185)", // Cambio aquí
+        background: "Rgb(123, 82, 185)",
       },
     }).showToast();
   };
 
   const handleSave = () => {
     let newData;
+    const storedData = JSON.parse(localStorage.getItem("datosFavoritos")) || [];
 
     if (!selectedFont) {
       const storedData =
         JSON.parse(localStorage.getItem("datosFavoritos")) || [];
       newData = [...storedData, "ABeeZee"];
     } else {
-      const storedData =
-        JSON.parse(localStorage.getItem("datosFavoritos")) || [];
+      if (storedData.includes(selectedFont)) {
+        console.log("ya esta guardada");
+
+        Toastify({
+          text: "Fuente guardada previamente.",
+          duration: 2500,
+          gravity: "top",
+          position: "right",
+          style: {
+            background: "#ff0000",
+          },
+        }).showToast();
+        return;
+      }
       newData = [...storedData, selectedFont];
     }
 
