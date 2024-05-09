@@ -6,13 +6,12 @@ export const Favorito = () => {
 
   useEffect(() => {
     // Obtener datos del localStorage al cargar el componente
-    const datosLocalStorage = JSON.parse(localStorage.getItem("datosFavoritos")) || [];
+    const datosLocalStorage =
+      JSON.parse(localStorage.getItem("datosFavoritos")) || [];
     setDatosTraidos(datosLocalStorage);
   }, []); // Ejecutar solo una vez al montar el componente
 
   const handleBorrar = (id) => {
-    console.log("borramos el id", id);
-
     const nuevoArray = datosTraidos.filter((nombre, index) => index !== id);
 
     // Actualizar el estado y el localStorage con el nuevo array
@@ -28,7 +27,7 @@ export const Favorito = () => {
         <div className="containerFavoritos">
           {datosTraidos.map((nombre, index) => (
             <div key={index} className="cuadradoFav">
-              <button className="borrar"  onClick={() => handleBorrar(index)}>
+              <button className="borrar" onClick={() => handleBorrar(index)}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
