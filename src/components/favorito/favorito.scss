@@ -1,60 +1,81 @@
-.misFavoritos {
-  height: 100vh;
+.title {
+  margin: 4rem 0;
+  text-align: center;
+}
 
-  .title {
-    margin: 4rem 0;
-    text-align: center;
-  }
+.favoritocontenedor {
+  display: flex;
 
-  .containerFavoritos {
-    .cuadradoFav {
-      width: 22%;
-      margin-bottom: 5rem;
-      position: relative;
+  .misFavoritos {
+    height: 100vh;
+    width: 43%;
 
-      .borrar {
-        position: absolute;
-        top: 2%;
-        right: 3%;
-        border: none;
-        background-color: transparent;
+    .containerFavoritos {
+      .cuadradoFav {
+        width: 48%;
+        margin-bottom: 5rem;
+        position: relative;
 
-        .estrella {
-          color: #fff;
+        .borrar {
+          position: absolute;
+          top: 2%;
+          right: 3%;
+          border: none;
+          background-color: transparent;
 
-          &:hover {
-            cursor: pointer;
-            color: #7b52b9;
+          .estrella {
+            color: #fff;
+
+            &:hover {
+              cursor: pointer;
+              color: #7b52b9;
+            }
           }
         }
-      }
 
-      .name {
-        margin-top: 1rem;
-      }
+        .name {
+          margin-top: 0;
+        }
 
-      .btn {
-        padding: 0.5rem 1rem;
-        border: 1px solid transparent;
-        background-color: rgb(123, 2, 153);
-        color: #fff;
-        border-radius: 0.25rem;
-        margin-right: 0.7rem;
-        transform: skew(-21deg);
-        width: 7rem;
-        transition: all 0.3s ease-in-out;
+        .btn {
+          padding: 0.5rem 1rem;
+          border: 1px solid transparent;
+          background-color: rgb(123, 2, 153);
+          color: #fff;
+          border-radius: 0.25rem;
+          margin-right: 0.7rem;
+          transform: skew(-21deg);
+          width: 7rem;
+          transition: all 0.3s ease-in-out;
 
-        &:hover {
-          background-color: #7b52b9;
-          cursor: pointer;
+          &:hover {
+            background-color: #7b52b9;
+            cursor: pointer;
+          }
         }
       }
     }
   }
 }
 
+.visualizacion {
+  width: 57%;
+
+  .h3Visu {
+    margin: 0;
+  }
+
+  .datos {
+    width: 98%;
+  }
+
+  .numeros {
+    letter-spacing: 1rem;
+  }
+}
+
 .sinFavoritos {
-  height: 100vh;  
+  height: 100vh;
   text-align: center;
 
   .title {
