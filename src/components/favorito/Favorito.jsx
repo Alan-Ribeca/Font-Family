@@ -96,6 +96,18 @@ export const Favorito = () => {
                     >
                       {nombre}
                     </button>
+                    <button className="btn">
+                      <a
+                        href={`https://fonts.google.com/specimen/${nombre
+                          .split(" ")
+                          .join("+")}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="fuenteA"
+                      >
+                        Usar fuente
+                      </a>
+                    </button>
                   </div>
                 ))}
               </div>

@@ -12,7 +12,7 @@
 
     .containerFavoritos {
       .cuadradoFav {
-        width: 48%;
+        width: 60%;
         margin-bottom: 5rem;
         position: relative;
 
@@ -43,9 +43,9 @@
           background-color: rgb(123, 2, 153);
           color: #fff;
           border-radius: 0.25rem;
-          margin-right: 0.7rem;
+          margin-right: 3.7rem;
           transform: skew(-21deg);
-          width: 7rem;
+          width: 8rem;
           transition: all 0.3s ease-in-out;
 
           &:hover {
@@ -53,6 +53,10 @@
             cursor: pointer;
           }
 
+          .fuenteA {
+            color: white;
+            text-decoration: none;
+          }
         }
         .btn.seleccionado {
           background-color: rgb(56, 0, 70);
