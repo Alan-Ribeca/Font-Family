@@ -25,12 +25,24 @@ export const GridCuatro = () => {
   };
 
   const handleSave = () => {
-    let newData;
     const storedData = JSON.parse(localStorage.getItem("datosFavoritos")) || [];
+    let newData;
 
     if (!selectedFont) {
-      const storedData =
-        JSON.parse(localStorage.getItem("datosFavoritos")) || [];
+      if (storedData.includes("ABeeZee")) {
+        console.log("ya esta guardada");
+
+        Toastify({
+          text: "Fuente guardada previamente.",
+          duration: 2500,
+          gravity: "top",
+          position: "right",
+          style: {
+            background: "#ff0000",
+          },
+        }).showToast();
+        return;
+      }
       newData = [...storedData, "ABeeZee"];
     } else {
       if (storedData.includes(selectedFont)) {

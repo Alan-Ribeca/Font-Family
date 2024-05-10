@@ -77,14 +77,44 @@ export const Favorito = () => {
 
             <section className="visualizacion">
               <h3 className="h3Visu">¡Datos curriosos!</h3>
-                <p className="datos">1- Serif vs. Sans-serif: Las fuentes serif tienen pequeños adornos en los extremos de las letras, llamados serifs, que pueden transmitir una sensación de tradición y formalidad. Por otro lado, las fuentes sans-serif carecen de estos adornos, lo que les otorga un aspecto más moderno y limpio.</p>
-                <p className="datos">2- Tipografía de palo seco (Monospace): En estas fuentes, cada carácter ocupa el mismo ancho de espacio, lo que las hace útiles para la codificación de programación y la creación de tablas de datos. Son fácilmente reconocibles por su aspecto mecanografiado.</p>
-                <p className="datos">3- Script y Cursiva: Las fuentes script imitan la apariencia de la escritura a mano, añadiendo un toque personal y elegante al diseño. Por otro lado, las fuentes cursivas tienen una inclinación similar a la escritura a mano cursiva, pero son más rígidas y formales.</p>
-                <p className="datos">4- Tipografía Display: Estas fuentes están diseñadas para su uso en títulos y encabezados, ya que son más ornamentadas y llamativas. Son ideales para captar la atención y transmitir un mensaje con impacto visual.</p>
-                <p className="datos">5- Historia y Evolución: Cada tipo de fuente tiene una historia fascinante detrás de su creación y evolución. Desde las antiguas inscripciones en piedra hasta las innovaciones modernas en diseño tipográfico, las fuentes han reflejado y moldeado los estilos y las épocas a lo largo de la historia del diseño gráfico.</p>
+              <p className="datos">
+                1- Serif vs. Sans-serif: Las fuentes serif tienen pequeños
+                adornos en los extremos de las letras, llamados serifs, que
+                pueden transmitir una sensación de tradición y formalidad. Por
+                otro lado, las fuentes sans-serif carecen de estos adornos, lo
+                que les otorga un aspecto más moderno y limpio.
+              </p>
+              <p className="datos">
+                2- Tipografía de palo seco (Monospace): En estas fuentes, cada
+                carácter ocupa el mismo ancho de espacio, lo que las hace útiles
+                para la codificación de programación y la creación de tablas de
+                datos. Son fácilmente reconocibles por su aspecto
+                mecanografiado.
+              </p>
+              <p className="datos">
+                3- Script y Cursiva: Las fuentes script imitan la apariencia de
+                la escritura a mano, añadiendo un toque personal y elegante al
+                diseño. Por otro lado, las fuentes cursivas tienen una
+                inclinación similar a la escritura a mano cursiva, pero son más
+                rígidas y formales.
+              </p>
+              <p className="datos">
+                4- Tipografía Display: Estas fuentes están diseñadas para su uso
+                en títulos y encabezados, ya que son más ornamentadas y
+                llamativas. Son ideales para captar la atención y transmitir un
+                mensaje con impacto visual.
+              </p>
+              <p className="datos">
+                5- Historia y Evolución: Cada tipo de fuente tiene una historia
+                fascinante detrás de su creación y evolución. Desde las antiguas
+                inscripciones en piedra hasta las innovaciones modernas en
+                diseño tipográfico, las fuentes han reflejado y moldeado los
+                estilos y las épocas a lo largo de la historia del diseño
+                gráfico.
+              </p>
 
-                <h3>Numeros</h3>
-                <p className="numeros">1 2 3 4 5 6 7 8 9 </p>
+              <h3>Numeros</h3>
+              <p className="numeros">1 2 3 4 5 6 7 8 9 </p>
             </section>
           </article>
         </>
