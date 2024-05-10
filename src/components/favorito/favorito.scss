@@ -1,6 +1,15 @@
 .title {
   margin: 4rem 0;
   text-align: center;
+  background: -webkit-linear-gradient(
+    93deg,
+    rgba(255, 255, 255, 0.89) 0%,
+    rgba(123, 82, 185, 0.9725490196) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 .favoritocontenedor {
@@ -75,10 +84,12 @@
 
   .datos {
     width: 98%;
+    color: rgba(208, 208, 216, 0.945);
   }
 
   .numeros {
     letter-spacing: 1rem;
+    color: rgba(208, 208, 216, 0.945);
   }
 }
 

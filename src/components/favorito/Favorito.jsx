@@ -38,8 +38,7 @@ export const Favorito = () => {
   };
 
   useEffect(() => {
-    console.log(fuenteSelec);
-  }, [fuenteSelec]); // Este efecto se ejecutará cada vez que fuenteSelec cambie
+  }, [fuenteSelec]); 
 
   function handleVerFuente(id) {
     setBotonSeleccionado(id);
@@ -94,7 +93,7 @@ export const Favorito = () => {
                       }`}
                       onClick={() => handleVerFuente(nombre)}
                     >
-                      {nombre}
+                      Ver
                     </button>
                     <button className="btn">
                       <a
@@ -105,7 +104,7 @@ export const Favorito = () => {
                         rel="noopener noreferrer"
                         className="fuenteA"
                       >
-                        Usar fuente
+                        Usar
                       </a>
                     </button>
                   </div>
