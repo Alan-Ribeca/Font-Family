@@ -6,6 +6,8 @@ import "./favorito.scss";
 
 export const Favorito = () => {
   const [datosTraidos, setDatosTraidos] = useState([]);
+  const [fuenteSelec, setFuenteSelec] = useState([]);
+  const [botonSeleccionado, setBotonSeleccionado] = useState([]);
 
   useEffect(() => {
     // Obtener datos del localStorage al cargar el componente
@@ -34,8 +36,25 @@ export const Favorito = () => {
       }).showToast();
     }
   };
+
+  useEffect(() => {
+    console.log(fuenteSelec);
+  }, [fuenteSelec]); // Este efecto se ejecutará cada vez que fuenteSelec cambie
+
+  function handleVerFuente(id) {
+    setBotonSeleccionado(id);
+    setFuenteSelec(id);
+  }
+
   return (
     <>
+      {fuenteSelec && (
+        <link
+          rel="stylesheet"
+          href={`https://fonts.googleapis.com/css2?family=${fuenteSelec}&display=swap`}
+        />
+      )}
+
       {datosTraidos.length === 0 ? (
         <div className="sinFavoritos">
           <h1 className="title">Mis Favoritos</h1>
@@ -69,13 +88,23 @@ export const Favorito = () => {
                       </svg>
                     </button>
                     <p className="name">Fuente: {nombre}</p>
-                    <button className="btn">Ver fuente</button>
+                    <button
+                      className={`btn ${
+                        botonSeleccionado === nombre ? "seleccionado" : ""
+                      }`}
+                      onClick={() => handleVerFuente(nombre)}
+                    >
+                      {nombre}
+                    </button>
                   </div>
                 ))}
               </div>
             </section>
 
-            <section className="visualizacion">
+            <section
+              className="visualizacion"
+              style={{ fontFamily: fuenteSelec }}
+            >
               <h3 className="h3Visu">¡Datos curriosos!</h3>
               <p className="datos">
                 1- Serif vs. Sans-serif: Las fuentes serif tienen pequeños
