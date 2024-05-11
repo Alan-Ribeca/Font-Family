@@ -125,6 +125,19 @@
   }
 }
 
+@media screen and (max-width: 1750px) { 
+  .containerGridCuatro .containerBoton{
+    .btnAnterior {
+      left: 5%;
+    }
+
+    .btnSiguiente {
+      right: 3%;
+    }
+
+  } 
+}
+
 @media screen and (max-width: 1536px) {
   .containerGridCuatro {
     grid-column: 1 / 3;
@@ -139,13 +152,19 @@
       text-overflow: ellipsis;
     }
 
+    .save {
+      top: 43%;
+      right: 19.5%;
+      margin: 0;
+    }
+
     .nombreFuente-usar {
       top: 3%;
       right: 12%;
 
       .fuenteA {
         position: absolute;
-        top: 23.5%;
+        top: 26.5%;
         right: 13%;
       }
     }
@@ -159,6 +178,10 @@
 @media screen and (max-width: 1000px) {
   .containerGridCuatro {
     width: 50%;
+
+    .save {
+      right: 20.5%;
+    }
 
     .aleatorio {
       display: block;
@@ -175,15 +198,14 @@
   }
 }
 
-@media screen and (max-width: 750px) {
-  .containerGridCuatro {
-    width: 67%;
-  }
-}
 
 @media screen and (max-width: 750px) {
   .containerGridCuatro {
     width: 94%;
+
+    .save {
+      right: 18.5%;
+    }
   }
 }
 
@@ -200,7 +222,8 @@
       margin: -1.5rem 0;
 
       .fuenteA {
-        top: 68%;
+        top: 27.5%;
+        right: 10.4%;
       }
     }
 
