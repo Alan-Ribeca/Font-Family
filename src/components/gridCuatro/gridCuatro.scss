@@ -212,7 +212,7 @@
 @media screen and (max-width: 550px) {
   .containerGridCuatro {
     position: relative;
-
+    height: 333px;
     .nombreFuente {
       width: 100%;
       margin: 1.5rem 0;
@@ -222,17 +222,19 @@
       margin: -1.5rem 0;
 
       .fuenteA {
-        top: 27.5%;
-        right: 10.4%;
+        top: 60.5%;
+        left: 4%;
       }
     }
 
     .save {
       margin: 0;
+      top: 60.5%;
+      left: 58%;
     }
 
     .containerBoton {
-      margin-top: 5rem;
+      margin-top: 7rem;
     }
   }
 }

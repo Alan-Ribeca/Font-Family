@@ -80,11 +80,11 @@ export const GridCuatro = () => {
         <h5 className="detalles">Detalles</h5>
         <hr className="hrDetalles" />
         <p className="nombreFuente">
-          Fuente: {selectedFont ? selectedFont : "ABeeZee"}
+          Nombre: {selectedFont ? selectedFont : "ABeeZee"}
         </p>
-        <p className="nombreFuente">Total de fuentes: 1618</p>
+        <p className="nombreFuente">Tot. de Ftes: 1618</p>
         <p className="nombreFuente">
-          Numero de la fuente: {indexActual ? indexActual : 0}
+          Fuente Núm: {indexActual ? indexActual : 0}
         </p>
         <button className="save" onClick={handleSave} onKeyDown={handleKeyDown}>
           Guardar
