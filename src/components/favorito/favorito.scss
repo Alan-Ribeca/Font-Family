@@ -14,9 +14,8 @@
 
 .favoritocontenedor {
   display: flex;
-
+  margin-bottom: 14rem;
   .misFavoritos {
-    height: 100vh;
     width: 43%;
 
     .containerFavoritos {
@@ -94,7 +93,7 @@
 }
 
 .sinFavoritos {
-  height: 100vh;
+  height: 66vh;
   text-align: center;
 
   .title {
@@ -105,5 +104,95 @@
     text-decoration: none;
     cursor: pointer;
     color: #7b52b9;
+  }
+}
+
+@media screen and (max-width: 1890px) {
+  .favoritocontenedor .misFavoritos .containerFavoritos .cuadradoFav {
+    width: 70%;
+
+    .btn {
+      margin-right: 2.7rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1676px) {
+  .favoritocontenedor .misFavoritos .containerFavoritos .cuadradoFav {
+    width: 100%;
+
+    .borrar {
+      right: 32%;
+    }
+  }
+}
+
+@media screen and (max-width: 1536px) {
+  .containerFavoritos {
+    margin-left: 2rem;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .favoritocontenedor .misFavoritos .containerFavoritos {
+    margin-left: 1rem;
+    .cuadradoFav {
+      .borrar {
+        right: 15%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .favoritocontenedor {
+    flex-direction: column-reverse;
+    align-items: center;
+
+    .visualizacion {
+      width: 75%;
+      margin-bottom: 5rem;
+    }
+
+    .misFavoritos {
+      width: 75%;
+    }
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .favoritocontenedor {
+    .visualizacion {
+      width: 92%;
+    }
+
+    .misFavoritos {
+      width: 92%;
+    }
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .favoritocontenedor {
+    .visualizacion {
+      width: 100%;
+    }
+
+    .misFavoritos {
+      width: 100%;
+
+      .containerFavoritos {
+        margin: 0;
+
+        .cuadradoFav {
+          .btn {
+            margin-right: 1rem;
+          }
+          .borrar {
+            right: 5%;
+          }
+        }
+      }
+    }
   }
 }
