@@ -45,6 +45,11 @@
           margin-top: 0;
         }
 
+        .fuenteA {
+          color: white;
+          text-decoration: none;
+        }
+        
         .btn {
           padding: 0.5rem 1rem;
           border: 1px solid transparent;
@@ -60,12 +65,9 @@
             background-color: #7b52b9;
             cursor: pointer;
           }
-
-          .fuenteA {
-            color: white;
-            text-decoration: none;
-          }
         }
+
+        
         .btn.seleccionado {
           background-color: rgb(56, 0, 70);
         }

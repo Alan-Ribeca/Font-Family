@@ -37,8 +37,7 @@ export const Favorito = () => {
     }
   };
 
-  useEffect(() => {
-  }, [fuenteSelec]); 
+  useEffect(() => {}, [fuenteSelec]);
 
   function handleVerFuente(id) {
     setBotonSeleccionado(id);
@@ -95,18 +94,16 @@ export const Favorito = () => {
                     >
                       Ver
                     </button>
-                    <button className="btn">
-                      <a
-                        href={`https://fonts.google.com/specimen/${nombre
-                          .split(" ")
-                          .join("+")}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="fuenteA"
-                      >
-                        Usar
-                      </a>
-                    </button>
+                    <a
+                      href={`https://fonts.google.com/specimen/${nombre
+                        .split(" ")
+                        .join("+")}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="fuenteA"
+                    >
+                      <button className="btn">Usar</button>
+                    </a>
                   </div>
                 ))}
               </div>
